@@ -12,7 +12,7 @@ To compare the performance of golang and python request libraries, we mainly com
 - [curl_cffi](https://github.com/yifeikong/curl_cffi)
 
 ### Random 1k data 10w requests
-| 库名 | 耗时 |
+| Library name | time consuming |
 | --- | --- |
 | go-resty  | 7.3855073s |
 | imroc/req | 7.3961296s | 
@@ -23,7 +23,7 @@ To compare the performance of golang and python request libraries, we mainly com
 | psf/requests | 76.01117539405823s |
 
 ### Random 10k data 10w requests
-| 库名 | 耗时 | 
+| Library name | time consuming | 
 | --- | --- |
 | gospider007/requests | 10.3116086s |
 | wangluozhe/requests | 12.402695s|
@@ -34,7 +34,7 @@ To compare the performance of golang and python request libraries, we mainly com
 | psf/requests | 77.11325931549072s |
 
 ### Random 100k data 10w requests
-| 库名 | 耗时 |
+| Library name | time consuming |
 | --- | --- |
 | gospider007/requests | 19.7566719s |
 | wangluozhe/requests | 33.9291227s|
