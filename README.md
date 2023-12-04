@@ -26,9 +26,9 @@ To compare the performance of golang and python request libraries, we mainly com
 | Library name | time consuming | 
 | --- | --- |
 | gospider007/requests | 10.3116086s |
-| wangluozhe/requests | 12.402695s|
-| imroc/req | 10.7307247s | 
 | go-resty  |  10.7186106s |
+| imroc/req | 10.7307247s | 
+| wangluozhe/requests | 12.402695s|
 | curl_cffi | 27.91108274459839s |
 | httpx | 64.91894054412842s |
 | psf/requests | 77.11325931549072s |
@@ -37,10 +37,12 @@ To compare the performance of golang and python request libraries, we mainly com
 | Library name | time consuming |
 | --- | --- |
 | gospider007/requests | 19.7566719s |
-| wangluozhe/requests | 33.9291227s|
 | imroc/req |30.3512156s | 
 | go-resty  |  31.2344602s |
+| wangluozhe/requests | 33.9291227s|
 | curl_cffi | 43.912320137023926s |
 | httpx | 84.05615258216858s |
 | psf/requests | 92.94585227966309s |
 
+## Results
+[gospider007/requests](https://github.com/gospider007/requests) > [imroc/req](github.com/imroc/req) > [go-resty](github.com/go-resty/resty) > [wangluozhe/requests](github.com/wangluozhe/requests) > [curl_cffi](https://github.com/yifeikong/curl_cffi) > [httpx](https://github.com/encode/httpx) > [psf/requests](https://github.com/psf/requests)
