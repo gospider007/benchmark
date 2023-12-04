@@ -3,7 +3,7 @@
 ## Introduction
 To compare the performance of golang and python request libraries, we mainly compare the following request libraries:
 - [gospider007/requests](github.com/gospider007/requests)
-- [go-resty v2.10.0](github.com/go-resty/resty)
+- [go-resty](github.com/go-resty/resty)
 - [imroc/req](github.com/imroc/req)
 - [wangluozhe/requests](github.com/wangluozhe/requests)
 
