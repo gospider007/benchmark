@@ -8,9 +8,9 @@ import (
 
 var httpSession = &http.Client{
 	Transport: &http.Transport{
-		MaxIdleConns:        5,
-		MaxIdleConnsPerHost: 5,
-		MaxConnsPerHost:     5,
+		MaxIdleConns:        100,
+		MaxIdleConnsPerHost: 100,
+		MaxConnsPerHost:     100,
 	},
 }
 
