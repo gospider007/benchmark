@@ -6,7 +6,10 @@ require (
 	github.com/go-resty/resty/v2 v2.10.0
 	github.com/gospider007/bar v0.0.0-20231201075546-252b6e7b6a54
 	github.com/gospider007/requests v0.0.0-20231201075721-36a4432d7123
+	github.com/gospider007/thread v0.0.0-20231201075505-f2f792cf3aa7
 	github.com/imroc/req/v3 v3.42.2
+	github.com/wangluozhe/chttp v0.0.1
+	github.com/wangluozhe/fhttp v0.0.2
 	github.com/wangluozhe/requests v1.1.19
 )
 
@@ -22,6 +25,7 @@ require (
 	github.com/google/pprof v0.0.0-20231127191134-f3a68a39ae15 // indirect
 	github.com/gospider007/blog v0.0.0-20231121084103-59a004dafccf // indirect
 	github.com/gospider007/bs4 v0.0.0-20231123090151-001db0b91941 // indirect
+	github.com/gospider007/chanx v0.0.0-20231024081700-522ff183916d // indirect
 	github.com/gospider007/gson v0.0.0-20231119141525-66095080057d // indirect
 	github.com/gospider007/gtls v0.0.0-20231120122450-e763299259db // indirect
 	github.com/gospider007/ja3 v0.0.0-20231029025157-38fc2f8f2d91 // indirect
@@ -48,7 +52,6 @@ require (
 	github.com/tidwall/gjson v1.17.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.1 // indirect
-	github.com/wangluozhe/fhttp v0.0.2 // indirect
 	github.com/zeebo/blake3 v0.2.3 // indirect
 	go.mongodb.org/mongo-driver v1.13.0 // indirect
 	go.uber.org/mock v0.3.0 // indirect

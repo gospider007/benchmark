@@ -37,6 +37,8 @@ github.com/gospider007/blog v0.0.0-20231121084103-59a004dafccf h1:1laTsuH/wl5pZ5
 github.com/gospider007/blog v0.0.0-20231121084103-59a004dafccf/go.mod h1:CCJ+hvQ0kxL+qB/Wfr1xt7xspsG4XiczhnAPVxG2m3M=
 github.com/gospider007/bs4 v0.0.0-20231123090151-001db0b91941 h1:Aik3aBqnpujF5LA+JyIm3LNxivobnqAOPr+VVlTbqds=
 github.com/gospider007/bs4 v0.0.0-20231123090151-001db0b91941/go.mod h1:bbSbFlcbgzxvmjVGp8rZq/BX975acPgGbuICISi1usI=
+github.com/gospider007/chanx v0.0.0-20231024081700-522ff183916d h1:mZEXpFAQLauplUbS0He8HEpxFuFrTU4Wqr+iNJNfZbY=
+github.com/gospider007/chanx v0.0.0-20231024081700-522ff183916d/go.mod h1:OZ+tVRnKXfPryK2K1V4CRyKeleZN+C3Qj/whqUzLdPs=
 github.com/gospider007/gson v0.0.0-20231119141525-66095080057d h1:K9IbMHY2dZfi1ddJWL7a+KkZe6apIYaXN1cD8lDRH5I=
 github.com/gospider007/gson v0.0.0-20231119141525-66095080057d/go.mod h1:r8uL+sPUwP8+6n8GZFa2iz2bJe0qNS6EKwkqmiZhHqI=
 github.com/gospider007/gtls v0.0.0-20231120122450-e763299259db h1:8ghU2J0g7BKC1t61TCA3kCkcUsgCn36YwEtTWXsqe+o=
@@ -51,6 +53,8 @@ github.com/gospider007/re v0.0.0-20231024115818-adfd03636256 h1:Z6kHRANoWB+/4rDz
 github.com/gospider007/re v0.0.0-20231024115818-adfd03636256/go.mod h1:X58uk0/F3mVskuQOZng0ZKJiAt3ETn0wxuLN//rVZrE=
 github.com/gospider007/requests v0.0.0-20231201075721-36a4432d7123 h1:Zu900gVx5tXr+uicfDOS4gfqiYaA4dYUuEgJq+60wKc=
 github.com/gospider007/requests v0.0.0-20231201075721-36a4432d7123/go.mod h1:1bfYv9wmzzUumCxLxY9DWU2EWYaXy9f29UDXI+HmxGQ=
+github.com/gospider007/thread v0.0.0-20231201075505-f2f792cf3aa7 h1:UBZG/LLxDYyp6PlPutp2Gy5E4z4rrJBCGCI8bRHFJDw=
+github.com/gospider007/thread v0.0.0-20231201075505-f2f792cf3aa7/go.mod h1:ezSko2n0PzR49lfo6TX7FCvxED9stEuNge/VaKAbKE4=
 github.com/gospider007/tools v0.0.0-20231201075443-f0a4bc8cd616 h1:Ix8hbbbaIX9REGs0qqU1b48L3BlleDyNkCPdv297LF8=
 github.com/gospider007/tools v0.0.0-20231201075443-f0a4bc8cd616/go.mod h1:wiILK6EotceHz/Rnb6ux8PzY3sr5OV+mYuIcbtxpkYI=
 github.com/gospider007/websocket v0.0.0-20231128065110-6296f87425c4 h1:h+74nkhhTDN2tiaDjHwR4CjqBTHgh+t1pqE2IAWHN3k=
@@ -108,6 +112,8 @@ github.com/tidwall/match v1.1.1/go.mod h1:eRSPERbgtNPcGhD8UCthc6PmLEQXEWd3PRB5JT
 github.com/tidwall/pretty v1.2.0/go.mod h1:ITEVvHYasfjBbM0u2Pg8T2nJnzm8xPwvNhhsoaGGjNU=
 github.com/tidwall/pretty v1.2.1 h1:qjsOFOWWQl+N3RsoF5/ssm1pHmJJwhjlSbZ51I6wMl4=
 github.com/tidwall/pretty v1.2.1/go.mod h1:ITEVvHYasfjBbM0u2Pg8T2nJnzm8xPwvNhhsoaGGjNU=
+github.com/wangluozhe/chttp v0.0.1 h1:6r73J2/FnuVG3y5guzyjcv5/k63cS2GrDMWZNl3uzds=
+github.com/wangluozhe/chttp v0.0.1/go.mod h1:a89dXbcRV/36MT66nkqzOJXejTBpYfYJvQ3Fw8Z4+HY=
 github.com/wangluozhe/fhttp v0.0.2 h1:udhERKJY0LxH2+4gz1WRSWtHjvD99kXtp8yL7vl3VjQ=
 github.com/wangluozhe/fhttp v0.0.2/go.mod h1:kAK+x1U0Wmy/htOSEeV31JyFBAVndp/orqVJZTq9FxM=
 github.com/wangluozhe/requests v1.1.19 h1:FmG5/sX2yVZ4xm6FFgQav0z/sohXxQMdcjjQ/jlCfLc=

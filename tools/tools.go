@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/gospider007/bar"
+	"github.com/gospider007/thread"
 )
 
 func PrintBar(ctx context.Context, total int, sucess *atomic.Int64) {
@@ -23,7 +24,7 @@ func PrintBar(ctx context.Context, total int, sucess *atomic.Int64) {
 		}
 	}()
 }
-func test(f func(href string) ([]byte, error), href string, sucess *atomic.Int64) {
+func test(ctx context.Context, f func(href string) ([]byte, error), href string, sucess *atomic.Int64) {
 	con, err := f(href)
 	if err != nil {
 		return
@@ -42,13 +43,34 @@ func test(f func(href string) ([]byte, error), href string, sucess *atomic.Int64
 		}
 	}
 }
-func TestMain(f func(href string) ([]byte, error), total int, href string) time.Duration {
+func TestMain(f func(href string) ([]byte, error), total int, href string, threadNum ...int) time.Duration {
+	if len(threadNum) > 0 {
+		return TestThreadMain(f, total, href, threadNum[0])
+	}
 	var sucess atomic.Int64
 	// PrintBar(ctx, total, &sucess)
 	t := time.Now()
 	for i := 0; i < total; i++ {
-		test(f, href, &sucess)
+		test(nil, f, href, &sucess)
 	}
+	t2 := time.Since(t)
+	if sucess.Load() != int64(total) {
+		log.Print(sucess.Load())
+		log.Panic("fail")
+	}
+	return t2
+}
+func TestThreadMain(f func(href string) ([]byte, error), total int, href string, threadNum int) time.Duration {
+	var sucess atomic.Int64
+	t := time.Now()
+	threadCli := thread.NewClient(nil, threadNum)
+	for i := 0; i < total; i++ {
+		threadCli.Write(&thread.Task{
+			Func: test,
+			Args: []any{f, href, &sucess},
+		})
+	}
+	threadCli.JoinClose()
 	t2 := time.Since(t)
 	if sucess.Load() != int64(total) {
 		log.Panic("fail")
