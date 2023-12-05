@@ -3,10 +3,16 @@ package request
 import (
 	"io"
 
-	http "github.com/wangluozhe/chttp"
+	chttp "github.com/wangluozhe/chttp"
 )
 
-var chttpSession = &http.Client{}
+var chttpSession = &chttp.Client{
+	Transport: &chttp.Transport{
+		MaxIdleConns:        100,
+		MaxIdleConnsPerHost: 100,
+		MaxConnsPerHost:     100,
+	},
+}
 
 func ChttpRequest(href string) ([]byte, error) {
 	resp, err := chttpSession.Get(href) // Treat the package name as a Request, send GET request.

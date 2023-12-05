@@ -4,6 +4,7 @@ import (
 	"context"
 	"crypto/rand"
 	"io"
+	"log"
 	"net/http"
 	"time"
 )
@@ -39,6 +40,8 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		Addr: addr,
 	}
 	go Server.ListenAndServe()
-	time.Sleep(time.Second * 3)
+	log.Print("准备")
+	time.Sleep(time.Second * 4)
+	log.Print("准备 ok")
 	return Server
 }

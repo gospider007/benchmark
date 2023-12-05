@@ -6,7 +6,13 @@ import (
 	"net/http"
 )
 
-var httpSession = &http.Client{}
+var httpSession = &http.Client{
+	Transport: &http.Transport{
+		MaxIdleConns:        5,
+		MaxIdleConnsPerHost: 5,
+		MaxConnsPerHost:     5,
+	},
+}
 
 func HttpRequest(href string) ([]byte, error) {
 	resp, err := httpSession.Get(href) // Treat the package name as a Request, send GET request.
@@ -14,5 +20,6 @@ func HttpRequest(href string) ([]byte, error) {
 		return nil, err
 	}
 	defer resp.Body.Close()
-	return io.ReadAll(resp.Body)
+	con, err := io.ReadAll(resp.Body)
+	return con, err
 }

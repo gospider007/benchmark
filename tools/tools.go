@@ -27,6 +27,7 @@ func PrintBar(ctx context.Context, total int, sucess *atomic.Int64) {
 func test(ctx context.Context, f func(href string) ([]byte, error), href string, sucess *atomic.Int64) {
 	con, err := f(href)
 	if err != nil {
+		log.Fatal(err)
 		return
 	}
 	if strings.Contains(href, "1k") {
