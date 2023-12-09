@@ -3,6 +3,7 @@ package request
 import (
 	"io"
 
+	tls "github.com/refraction-networking/utls"
 	fhttp "github.com/wangluozhe/fhttp"
 )
 
@@ -11,6 +12,9 @@ var fhttpSession = &fhttp.Client{
 		MaxIdleConns:        100,
 		MaxIdleConnsPerHost: 100,
 		MaxConnsPerHost:     100,
+		TLSClientConfig: &tls.Config{
+			InsecureSkipVerify: true,
+		},
 	},
 }
 

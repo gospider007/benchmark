@@ -45,6 +45,8 @@ func test(ctx context.Context, f func(href string) ([]byte, error), href string,
 	}
 }
 func TestMain(f func(href string) ([]byte, error), total int, href string, threadNum ...int) time.Duration {
+	href = "http://" + href
+	// href = "https://" + href
 	if len(threadNum) > 0 {
 		return TestThreadMain(f, total, href, threadNum[0])
 	}

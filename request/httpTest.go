@@ -4,6 +4,8 @@ import (
 	"io"
 
 	"net/http"
+
+	"crypto/tls"
 )
 
 var httpSession = &http.Client{
@@ -11,6 +13,9 @@ var httpSession = &http.Client{
 		MaxIdleConns:        100,
 		MaxIdleConnsPerHost: 100,
 		MaxConnsPerHost:     100,
+		TLSClientConfig: &tls.Config{
+			InsecureSkipVerify: true,
+		},
 	},
 }
 

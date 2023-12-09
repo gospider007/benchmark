@@ -40,6 +40,20 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		Addr: addr,
 	}
 	go Server.ListenAndServe()
+	// cert, err := gtls.CreateProxyCertWithName("test")
+	// if err != nil {
+	// 	log.Panic(err)
+	// }
+	// Server := &http.Server{
+	// 	Addr: addr,
+	// 	TLSConfig: &tls.Config{
+	// 		GetCertificate: func(chi *tls.ClientHelloInfo) (*tls.Certificate, error) {
+	// 			return &cert, nil
+	// 		},
+	// 	},
+	// }
+	// go Server.ListenAndServeTLS("", "")
+
 	log.Print("准备")
 	time.Sleep(time.Second * 4)
 	log.Print("准备 ok")

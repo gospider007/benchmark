@@ -3,6 +3,7 @@ package request
 import (
 	"io"
 
+	tls "github.com/refraction-networking/utls"
 	chttp "github.com/wangluozhe/chttp"
 )
 
@@ -11,6 +12,9 @@ var chttpSession = &chttp.Client{
 		MaxIdleConns:        100,
 		MaxIdleConnsPerHost: 100,
 		MaxConnsPerHost:     100,
+		TLSClientConfig: &tls.Config{
+			InsecureSkipVerify: true,
+		},
 	},
 }
 
