@@ -34,7 +34,9 @@ func tempTest() {
 	defer cnl()
 	svr := server.RequestServer(ctx, "127.0.0.1:3334")
 	defer svr.Close()
+	log.Print("FhttpRequest 1k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/1k")) //10并发
 	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/1k", 10)) //10并发
+	log.Print("FhttpRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k")) //10并发
 	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k", 10)) //10并发
 
 	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.FhttpRequest, 100000, "127.0.0.1:3334/1k"))     //1 并发
@@ -47,10 +49,10 @@ func tempTest() {
 	// log.Print("HttpRequest 1k time: ", tools.TestMain(request.HttpRequest, 100000, "127.0.0.1:3334/1k", 10)) //10并发
 	// log.Print("GospiderRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k", 10)) //1 并发
 	// log.Print("ImrocReq 1k time: ", tools.TestMain(request.ImrocReq, 100000, "127.0.0.1:3334/1k", 10))               //1 并发
-	log.Print("GospiderRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k")) //1 并发
-	log.Print("ImrocReq 1k time: ", tools.TestMain(request.ImrocReq, 100000, "127.0.0.1:3334/1k"))               //1 并发
+	// log.Print("GospiderRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k")) //1 并发
+	// log.Print("ImrocReq 1k time: ", tools.TestMain(request.ImrocReq, 100000, "127.0.0.1:3334/1k"))               //1 并发
 }
 func main() {
-	// tempTest()
-	oneThreadTest()
+	tempTest()
+	// oneThreadTest()
 }
