@@ -14,8 +14,6 @@ github.com/cloudflare/circl v1.3.6/go.mod h1:5XYMA4rFBvNIrhs50XuiBJ15vF2pZn4nnUK
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/gaukas/godicttls v0.0.4 h1:NlRaXb3J6hAnTmWdsEKb9bcSBD6BvcIjdGdeb0zfXbk=
-github.com/gaukas/godicttls v0.0.4/go.mod h1:l6EenT4TLWgTdwslVb4sEMOCf7Bv0JAK67deKr9/NCI=
 github.com/go-logr/logr v1.3.0 h1:2y3SDp0ZXuc6/cjLSZ+Q3ir+QB9T/iG5yYRXqsagWSY=
 github.com/go-logr/logr v1.3.0/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
 github.com/go-resty/resty/v2 v2.10.0 h1:Qla4W/+TMmv0fOeeRqzEpXPLfTUnR5HZ1+lGs+CkiCo=
@@ -45,8 +43,6 @@ github.com/gospider007/gson v0.0.0-20231215083934-e7762897c4db h1:EXDXNnZ1jizcq3
 github.com/gospider007/gson v0.0.0-20231215083934-e7762897c4db/go.mod h1:tL+3YduR/6ofo4cdv4lpBw5+nph0OJ11x1uOKLyo9Ro=
 github.com/gospider007/gtls v0.0.0-20231215082710-ea089e961bcc h1:69I4vx/fPY5A0EV2Mxf97iCY7ttBsCXWt6U3B0XRZwE=
 github.com/gospider007/gtls v0.0.0-20231215082710-ea089e961bcc/go.mod h1:QoA/cKZfGzg2uNG6SqE/alXi1ONl5l17jOUn0+p/aQc=
-github.com/gospider007/ja3 v0.0.0-20231215081451-4f0f2494ca9f h1:6ti0B70R4S6eTyd06JyT4Yf1PpJsGxBeRcpiBvEu5uA=
-github.com/gospider007/ja3 v0.0.0-20231215081451-4f0f2494ca9f/go.mod h1:xGzVELcwt5tiprBlyk/X4XhnxD0aCYzSfdj06s3VjfI=
 github.com/gospider007/ja3 v0.0.0-20231216073617-0c1a87228845 h1:lVoHp1YqpwoZJgBnzj8VupzNBqWVS4lggTWoFAIx03I=
 github.com/gospider007/ja3 v0.0.0-20231216073617-0c1a87228845/go.mod h1:wqFAnfFI26Dc8nM4vSFUuP3Lylf4OHSEztUCdhRb4A0=
 github.com/gospider007/kinds v0.0.0-20231024093643-7a4424f2d30e h1:lmX6IQKkrNDbXfHsvrv1Uz0MoG2v5+4VC6Gdh9irUNY=
@@ -55,8 +51,6 @@ github.com/gospider007/net v0.0.0-20231215081728-064725ce355a h1:ZQFHnC3rVqKCVud
 github.com/gospider007/net v0.0.0-20231215081728-064725ce355a/go.mod h1:SpSZEVVotfx4jMj0gv2NsmW1UhAg7RvhC01jbmYrEWg=
 github.com/gospider007/re v0.0.0-20231024115818-adfd03636256 h1:Z6kHRANoWB+/4rDzq51vBts0rIXilDrF8pdRNmbMJi4=
 github.com/gospider007/re v0.0.0-20231024115818-adfd03636256/go.mod h1:X58uk0/F3mVskuQOZng0ZKJiAt3ETn0wxuLN//rVZrE=
-github.com/gospider007/requests v0.0.0-20231215083622-456c10ef4ba9 h1:tPWV5seQkpN/ku7HRO5/wvtSBv2vnNtRpSbJoRiOKfE=
-github.com/gospider007/requests v0.0.0-20231215083622-456c10ef4ba9/go.mod h1:gBMHwaH12x9g1LpBU5V78WJ9RIP/3s4Eac6/K/fC2bY=
 github.com/gospider007/requests v0.0.0-20231216082621-948b2a5a9ead h1:CMCiEmsJshzQ4OaGuvsHCpZotChAGttCx8cNHBxXaQ0=
 github.com/gospider007/requests v0.0.0-20231216082621-948b2a5a9ead/go.mod h1:CuciiszX3NFRgmYbcMnD65utVr7DKCxBN5oyhRVqJ9A=
 github.com/gospider007/thread v0.0.0-20231201075505-f2f792cf3aa7 h1:UBZG/LLxDYyp6PlPutp2Gy5E4z4rrJBCGCI8bRHFJDw=
@@ -104,8 +98,6 @@ github.com/quic-go/qtls-go1-20 v0.4.1 h1:D33340mCNDAIKBqXuAvexTNMUByrYmFYVfKfDN5
 github.com/quic-go/qtls-go1-20 v0.4.1/go.mod h1:X9Nh97ZL80Z+bX/gUXMbipO6OxdiDi58b/fMC9mAL+k=
 github.com/quic-go/quic-go v0.40.1 h1:X3AGzUNFs0jVuO3esAGnTfvdgvL4fq655WaOi1snv1Q=
 github.com/quic-go/quic-go v0.40.1/go.mod h1:PeN7kuVJ4xZbxSv/4OX6S1USOX8MJvydwpTx31vx60c=
-github.com/refraction-networking/utls v1.5.4 h1:9k6EO2b8TaOGsQ7Pl7p9w6PUhx18/ZCeT0WNTZ7Uw4o=
-github.com/refraction-networking/utls v1.5.4/go.mod h1:SPuDbBmgLGp8s+HLNc83FuavwZCFoMmExj+ltUHiHUw=
 github.com/refraction-networking/utls v1.5.5-0.20231216063210-c4ba3ff3af8d h1:dcwi0PDpFqcZ+PgPvQjcz7VNZM3yMeGvv2L162fn3IQ=
 github.com/refraction-networking/utls v1.5.5-0.20231216063210-c4ba3ff3af8d/go.mod h1:kHJ6R9DFFA0WsRgBM35iiDku4O7AqPR6y79iuzW7b10=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=

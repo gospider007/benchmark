@@ -21,7 +21,6 @@ require (
 	github.com/bitly/go-simplejson v0.5.1 // indirect
 	github.com/caddyserver/certmagic v0.20.0 // indirect
 	github.com/cloudflare/circl v1.3.6 // indirect
-	github.com/gaukas/godicttls v0.0.4 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
 	github.com/google/pprof v0.0.0-20231212022811-ec68065c825e // indirect
 	github.com/gospider007/blog v0.0.0-20231121084103-59a004dafccf // indirect
