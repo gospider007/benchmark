@@ -14,10 +14,10 @@ To compare the performance of golang and python request libraries, we mainly com
 ### Random 1k data 10w requests
 | Library name | time consuming |
 | --- | --- |
-| go-resty  | 7.3855073s |
-| imroc/req | 7.3961296s | 
-| gospider007/requests | 7.7989687s |
-| wangluozhe/requests | 8.9908882s |
+| gospider007/requests | 6.9499259s |
+| go-resty  | 7.1604138s |
+| imroc/req | 7.2530969s | 
+| wangluozhe/requests |  8.4787594s |
 | curl_cffi | 26.215140342712402s |
 | httpx | 61.01818656921387s |
 | psf/requests | 76.01117539405823s |
@@ -25,10 +25,10 @@ To compare the performance of golang and python request libraries, we mainly com
 ### Random 10k data 10w requests
 | Library name | time consuming | 
 | --- | --- |
-| gospider007/requests | 10.3116086s |
-| go-resty  |  10.7186106s |
-| imroc/req | 10.7307247s | 
-| wangluozhe/requests | 12.402695s|
+| gospider007/requests | 9.4316189s |
+| imroc/req | 10.1804427s | 
+| go-resty  |  10.2600992s |
+| wangluozhe/requests | 11.7542946s|
 | curl_cffi | 27.91108274459839s |
 | httpx | 64.91894054412842s |
 | psf/requests | 77.11325931549072s |
@@ -36,10 +36,10 @@ To compare the performance of golang and python request libraries, we mainly com
 ### Random 100k data 10w requests
 | Library name | time consuming |
 | --- | --- |
-| gospider007/requests | 19.7566719s |
-| imroc/req |30.3512156s | 
-| go-resty  |  31.2344602s |
-| wangluozhe/requests | 33.9291227s|
+| gospider007/requests | 19.228713s |
+| imroc/req |31.6547403s | 
+| go-resty  |  32.5609081s |
+| wangluozhe/requests | 33.4119696s|
 | curl_cffi | 43.912320137023926s |
 | httpx | 84.05615258216858s |
 | psf/requests | 92.94585227966309s |

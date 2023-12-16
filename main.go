@@ -53,6 +53,6 @@ func tempTest() {
 	// log.Print("ImrocReq 1k time: ", tools.TestMain(request.ImrocReq, 100000, "127.0.0.1:3334/1k"))               //1 并发
 }
 func main() {
-	tempTest()
-	// oneThreadTest()
+	// tempTest()
+	oneThreadTest()
 }

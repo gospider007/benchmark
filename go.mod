@@ -5,10 +5,10 @@ go 1.21.3
 require (
 	github.com/go-resty/resty/v2 v2.10.0
 	github.com/gospider007/bar v0.0.0-20231215084215-956cfa59ce61
-	github.com/gospider007/requests v0.0.0-20231215083622-456c10ef4ba9
+	github.com/gospider007/requests v0.0.0-20231216082621-948b2a5a9ead
 	github.com/gospider007/thread v0.0.0-20231201075505-f2f792cf3aa7
 	github.com/imroc/req/v3 v3.42.2
-	github.com/refraction-networking/utls v1.5.4
+	github.com/refraction-networking/utls v1.5.5-0.20231216063210-c4ba3ff3af8d
 	github.com/wangluozhe/chttp v0.0.4
 	github.com/wangluozhe/fhttp v0.0.2
 	github.com/wangluozhe/requests v1.2.1
@@ -29,7 +29,7 @@ require (
 	github.com/gospider007/chanx v0.0.0-20231024081700-522ff183916d // indirect
 	github.com/gospider007/gson v0.0.0-20231215083934-e7762897c4db // indirect
 	github.com/gospider007/gtls v0.0.0-20231215082710-ea089e961bcc // indirect
-	github.com/gospider007/ja3 v0.0.0-20231215081451-4f0f2494ca9f // indirect
+	github.com/gospider007/ja3 v0.0.0-20231216073617-0c1a87228845 // indirect
 	github.com/gospider007/kinds v0.0.0-20231024093643-7a4424f2d30e // indirect
 	github.com/gospider007/net v0.0.0-20231215081728-064725ce355a // indirect
 	github.com/gospider007/re v0.0.0-20231024115818-adfd03636256 // indirect
