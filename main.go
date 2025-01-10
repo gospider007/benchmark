@@ -18,11 +18,12 @@ func oneThreadTest() {
 	log.Print("WangluozheRequest 1k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/1k"))
 	log.Print("ImrocReq 1k time: ", tools.TestMain(request.ImrocReq, 100000, "127.0.0.1:3334/1k"))
 	log.Print("GoRestyRequest 1k time: ", tools.TestMain(request.GoRestyRequest, 100000, "127.0.0.1:3334/1k"))
-
+	log.Print("=======================")
 	log.Print("GospiderRequest 10k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/10k"))
 	log.Print("WangluozheRequest 10k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/10k"))
 	log.Print("ImrocReq 10k time: ", tools.TestMain(request.ImrocReq, 100000, "127.0.0.1:3334/10k"))
 	log.Print("GoRestyRequest 10k time: ", tools.TestMain(request.GoRestyRequest, 100000, "127.0.0.1:3334/10k"))
+	log.Print("=======================")
 
 	log.Print("GospiderRequest 100k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/100k"))
 	log.Print("WangluozheRequest 100k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/100k"))
@@ -34,9 +35,9 @@ func tempTest() {
 	defer cnl()
 	svr := server.RequestServer(ctx, "127.0.0.1:3334")
 	defer svr.Close()
-	log.Print("FhttpRequest 1k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/1k")) //10并发
+	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/1k")) //10并发
 	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.WangluozheRequest, 100000, "127.0.0.1:3334/1k", 10)) //10并发
-	log.Print("FhttpRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k")) //10并发
+	log.Print("FhttpRequest 1k time: ", tools.TestMain(request.GospiderRequest, 10, "127.0.0.1:3334/1k")) //10并发
 	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.GospiderRequest, 100000, "127.0.0.1:3334/1k", 10)) //10并发
 
 	// log.Print("FhttpRequest 1k time: ", tools.TestMain(request.FhttpRequest, 100000, "127.0.0.1:3334/1k"))     //1 并发
