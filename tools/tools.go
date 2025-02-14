@@ -30,17 +30,24 @@ func test(ctx context.Context, f func(href string) ([]byte, error), href string,
 		log.Fatal(err)
 		return
 	}
+
 	if strings.Contains(href, "1k") {
 		if len(con) == 1024 {
 			sucess.Add(1)
+		} else {
+			log.Print(len(con))
 		}
 	} else if strings.Contains(href, "10k") {
 		if len(con) == 10240 {
 			sucess.Add(1)
+		} else {
+			log.Print(len(con))
 		}
 	} else if strings.Contains(href, "100k") {
 		if len(con) == 102400 {
 			sucess.Add(1)
+		} else {
+			log.Print(len(con))
 		}
 	}
 }
@@ -66,12 +73,17 @@ func TestMain(f func(href string) ([]byte, error), total int, href string, threa
 func TestThreadMain(f func(href string) ([]byte, error), total int, href string, threadNum int) time.Duration {
 	var sucess atomic.Int64
 	t := time.Now()
-	threadCli := thread.NewClient(nil, threadNum)
+	threadCli := thread.NewClient(nil, threadNum, thread.ClientOption{
+		Debug: true,
+	})
 	for i := 0; i < total; i++ {
-		threadCli.Write(&thread.Task{
+		_, err := threadCli.Write(nil, &thread.Task{
 			Func: test,
 			Args: []any{f, href, &sucess},
 		})
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
 	threadCli.JoinClose()
 	t2 := time.Since(t)
