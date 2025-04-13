@@ -12,23 +12,30 @@ import (
 )
 
 type testData struct {
-	Http2  bool
-	Addr   string
-	Total  int
-	Thread int
-	K      string
+	Http2    bool
+	ReadBody bool
+	Addr     string
+	Total    int
+	Thread   int
+	K        string
 }
 
 var DefaultTestData = testData{
-	Http2: true,
-	Addr:  "127.0.0.1:3334",
-	K:     "10k",
-	// Total: 1000000,
-	// Total:  100,
-	Total:  1000,
-	Thread: 10,
-	// Total:  10000,
-	// Thread: 10,
+	// Http2: true,
+	Addr: "127.0.0.1:3334",
+	K:    "1k",
+	// ReadBody: true,
+	// K:     "100k",
+	// Total: 100000,
+
+	// Total: 5,
+	// Total: 10000,
+	Total: 10000,
+	// Thread: 200,
+	// Thread: 1000,
+	// Total: 100,
+	// Thread: 100,
+	Thread: 1,
 }
 
 func PrintBar(ctx context.Context, total int, sucess *atomic.Int64) {
@@ -111,12 +118,12 @@ func TestMain(f func(href string) ([]byte, error), total int, href string, threa
 	// PrintBar(ctx, total, &sucess)
 	t := time.Now()
 	for i := 0; i < total; i++ {
-		// log.Print(i, " start")
+		log.Print(i, " start")
 		// if i%10000 == 0 {
 		// 	log.Print(i, " start")
 		// }
 		test(nil, f, href, &sucess)
-		// log.Print(i, " end")
+		log.Print(i, " end")
 
 		// if i%10000 == 0 {
 		// 	log.Print(i, " end")

@@ -33,7 +33,7 @@ func HttpRequest(href string) ([]byte, error) {
 }
 func HttpRequest2(href string) ([]byte, error) {
 	// randomBytes := make([]byte, 1024*10000)
-	randomBytes := make([]byte, 1024*100000)
+	randomBytes := make([]byte, 1024*1000)
 	// randomBytes := make([]byte, 1024*100000)
 	io.ReadFull(rand.Reader, randomBytes)
 	resp, err := httpSession.Post(href, "stream/octet-stream", bytes.NewReader(randomBytes)) // Treat the package name as a Request, send GET request.
