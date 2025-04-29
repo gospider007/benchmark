@@ -21,9 +21,9 @@ type testData struct {
 }
 
 var DefaultTestData = testData{
-	// Http2: true,
-	Addr: "127.0.0.1:3334",
-	K:    "1k",
+	Http2: true,
+	Addr:  "127.0.0.1:3334",
+	K:     "1k",
 	// ReadBody: true,
 	// K:     "100k",
 	// Total: 100000,
