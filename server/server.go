@@ -1,7 +1,6 @@
 package server
 
 import (
-	"benchmark/tools"
 	"context"
 	"crypto/rand"
 	"crypto/tls"
@@ -19,10 +18,6 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		addr = ":3334"
 	}
 	http.HandleFunc("/1k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*1)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -31,10 +26,6 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 	})
 
 	http.HandleFunc("/10k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*10)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -43,7 +34,7 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 	})
 
 	http.HandleFunc("/100k", func(w http.ResponseWriter, r *http.Request) {
-		// if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody{
+		// if r.Body != nil && r.ContentLength > 0{
 		// 	ccc, err := io.ReadAll(r.Body)
 		// 	log.Print("post body len: ===============", err, len(ccc))
 		// }
@@ -54,7 +45,7 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/1000k", func(w http.ResponseWriter, r *http.Request) {
-		// if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody{
+		// if r.Body != nil && r.ContentLength > 0{
 		// 	ccc, err := io.ReadAll(r.Body)
 		// 	log.Print("post body len: ===============", err, len(ccc))
 		// }
@@ -65,11 +56,7 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/10000k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
+		if r.Body != nil && r.ContentLength > 0 {
 			io.Copy(io.Discard, r.Body)
 		}
 		randomBytes := make([]byte, 1024*10000)
@@ -79,10 +66,6 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/100000k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*100000)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -90,10 +73,6 @@ func RequestServer(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/1000000k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*1000000)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -114,10 +93,6 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 		addr = ":3334"
 	}
 	http.HandleFunc("/1k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*1)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -126,10 +101,6 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 	})
 
 	http.HandleFunc("/10k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*10)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -138,7 +109,7 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 	})
 
 	http.HandleFunc("/100k", func(w http.ResponseWriter, r *http.Request) {
-		// if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody{
+		// if r.Body != nil && r.ContentLength > 0{
 		// 	ccc, err := io.ReadAll(r.Body)
 		// 	log.Print("post body len: ===============", err, len(ccc))
 		// }
@@ -149,7 +120,7 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/1000k", func(w http.ResponseWriter, r *http.Request) {
-		// if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody{
+		// if r.Body != nil && r.ContentLength > 0{
 		// 	ccc, err := io.ReadAll(r.Body)
 		// 	log.Print("post body len: ===============", err, len(ccc))
 		// }
@@ -160,10 +131,6 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/10000k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*10000)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -171,10 +138,6 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/100000k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*100000)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")
@@ -182,10 +145,6 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 		w.Write(randomBytes)
 	})
 	http.HandleFunc("/1000000k", func(w http.ResponseWriter, r *http.Request) {
-		if r.Body != nil && r.ContentLength > 0 && tools.DefaultTestData.ReadBody {
-			ccc, err := io.ReadAll(r.Body)
-			log.Print("post body len: ===============", err, len(ccc))
-		}
 		randomBytes := make([]byte, 1024*1000000)
 		io.ReadFull(rand.Reader, randomBytes)
 		w.Header().Set("Content-Type", "application/octet-stream")

@@ -8,14 +8,7 @@ import (
 )
 
 func GospiderRequest(href string) ([]byte, error) {
-	resp, err := requests.Get(nil, href, requests.RequestOption{
-		ClientOption: requests.ClientOption{
-			// ErrCallBack: func(ctx *requests.Response) error {
-			// 	log.Print(ctx.Err())
-			// 	return nil
-			// },
-		},
-	})
+	resp, err := requests.Get(nil, href, requests.RequestOption{})
 	if err != nil {
 		return nil, err
 	}

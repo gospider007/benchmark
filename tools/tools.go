@@ -11,33 +11,6 @@ import (
 	"github.com/gospider007/thread"
 )
 
-type testData struct {
-	Http2    bool
-	ReadBody bool
-	Addr     string
-	Total    int
-	Thread   int
-	K        string
-}
-
-var DefaultTestData = testData{
-	Http2: true,
-	Addr:  "127.0.0.1:3334",
-	K:     "1k",
-	// ReadBody: true,
-	// K:     "100k",
-	// Total: 100000,
-
-	// Total: 5,
-	// Total: 10000,
-	Total: 10000,
-	// Thread: 200,
-	// Thread: 1000,
-	// Total: 100,
-	// Thread: 100,
-	Thread: 1,
-}
-
 func PrintBar(ctx context.Context, total int, sucess *atomic.Int64) {
 	go func() {
 		barClient := bar.NewClient(int64(total))
@@ -62,7 +35,7 @@ func test(ctx context.Context, f func(href string) ([]byte, error), href string,
 		if len(con) == 1024 {
 			sucess.Add(1)
 		} else {
-			log.Print(len(con))
+			log.Print(len(con), "错误的长度")
 		}
 	} else if strings.Contains(href, "10k") {
 		if len(con) == 10240 {
@@ -104,8 +77,8 @@ func test(ctx context.Context, f func(href string) ([]byte, error), href string,
 		log.Panic(href, len(con))
 	}
 }
-func TestMain(f func(href string) ([]byte, error), total int, href string, threadNum ...int) time.Duration {
-	if DefaultTestData.Http2 {
+func TestMain(f func(href string) ([]byte, error), total int, href string, Http2 bool, threadNum ...int) time.Duration {
+	if Http2 {
 		href = "https://" + href
 	} else {
 		href = "http://" + href
