@@ -43,8 +43,9 @@ type requestFunc struct {
 	f    func(href string) ([]byte, error)
 }
 
+// {"GospiderRequest2", request.GospiderRequest2},
+
 var requestFuncs = []requestFunc{
-	// {"GospiderRequest2", request.GospiderRequest2},
 	{"GospiderRequest", request.GospiderRequest},
 	{"AzureTest", request.AzureTest},
 	{"WangluozheRequest", request.WangluozheRequest},
@@ -54,6 +55,6 @@ var requestFuncs = []requestFunc{
 var routes = []string{"1k", "10k", "100k"}
 
 func main() {
-	oneThreadTest(requestFuncs, routes, true, 10000, 10)
+	// oneThreadTest(requestFuncs, routes, true, 10000, 10)
 	// oneThreadTest(requestFuncs, routes, false, 10000, 10)
 }

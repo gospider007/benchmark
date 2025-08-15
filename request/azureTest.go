@@ -1,7 +1,7 @@
 package request
 
 import (
-	"github.com/Noooste/azuretls-client"
+	azuretls "github.com/Noooste/azuretls-client"
 	http "github.com/Noooste/fhttp"
 	tls "github.com/Noooste/utls"
 )
