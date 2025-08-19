@@ -153,10 +153,11 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 	})
 	Server := &http.Server{
 		Addr: addr,
-		TLSConfig: gtls.GetCertConfigForClient(&tls.Config{
+		TLSConfig: &tls.Config{
+			GetCertificate:     gtls.GetCertificate,
 			NextProtos:         []string{"h2"},
 			InsecureSkipVerify: true,
-		}),
+		},
 	}
 	// err = http.Http2ConfigureServer(Server, nil)
 	err := http2.ConfigureServer(Server, nil)

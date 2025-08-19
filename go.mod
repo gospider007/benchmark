@@ -7,15 +7,15 @@ require (
 	github.com/Noooste/fhttp v1.0.15
 	github.com/Noooste/utls v1.3.19
 	github.com/go-resty/resty/v2 v2.16.5
-	github.com/gospider007/bar v0.0.0-20250217074946-47896d8de2ba
-	github.com/gospider007/gtls v0.0.0-20250801033740-1ebcdc3aaa9a
-	github.com/gospider007/requests v0.0.0-20250813030118-f7f37f2c2f45
-	github.com/gospider007/thread v0.0.0-20250327035213-c4ae3dc8660a
+	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
+	github.com/gospider007/gtls v0.0.0-20250815030824-aeefe4aaf3c3
+	github.com/gospider007/requests v0.0.0-20250817064452-b7e9168c8008
+	github.com/gospider007/thread v0.0.0-20250815031334-ef26b8c2cc5c
 	github.com/imroc/req/v3 v3.54.0
 	github.com/refraction-networking/utls v1.8.0
-	github.com/wangluozhe/chttp v1.0.12
+	github.com/wangluozhe/chttp v1.0.14
 	github.com/wangluozhe/fhttp v0.0.2
-	github.com/wangluozhe/requests v1.4.1
+	github.com/wangluozhe/requests v1.4.2
 	golang.org/x/net v0.43.0
 )
 
@@ -35,6 +35,7 @@ require (
 	github.com/cloudflare/circl v1.6.1 // indirect
 	github.com/dsnet/compress v0.0.2-0.20230904184137-39efe44ab707 // indirect
 	github.com/fatih/color v1.18.0 // indirect
+	github.com/fxamacker/cbor v1.5.1 // indirect
 	github.com/gaukas/clienthellod v0.4.2 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
@@ -48,12 +49,12 @@ require (
 	github.com/gospider007/bs4 v0.0.0-20250815030800-a352d3ad57ee // indirect
 	github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb // indirect
 	github.com/gospider007/gson v0.0.0-20250815030832-fa016f03a353 // indirect
-	github.com/gospider007/http1 v0.0.0-20250813025429-32856d1a525a // indirect
+	github.com/gospider007/http1 v0.0.0-20250815030711-c802b9917f04 // indirect
 	github.com/gospider007/http2 v0.0.0-20250815030719-fbb38e8381a2 // indirect
 	github.com/gospider007/http3 v0.0.0-20250815030725-99a8089709d2 // indirect
-	github.com/gospider007/ja3 v0.0.0-20250724085013-aa7e0a527d6c // indirect
+	github.com/gospider007/ja3 v0.0.0-20250815031055-0948dc3bbe0b // indirect
 	github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c // indirect
-	github.com/gospider007/re v0.0.0-20250217075352-bcb79f285d6c // indirect
+	github.com/gospider007/re v0.0.0-20250815031101-a57caeff73bf // indirect
 	github.com/gospider007/tools v0.0.0-20250815031258-8a81d680917c // indirect
 	github.com/gospider007/websocket v0.0.0-20250815031315-cde1470d5ace // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -87,6 +88,7 @@ require (
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/tidwall/sjson v1.2.5 // indirect
 	github.com/ulikunitz/xz v0.5.12 // indirect
+	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
 	go.mongodb.org/mongo-driver v1.17.4 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
