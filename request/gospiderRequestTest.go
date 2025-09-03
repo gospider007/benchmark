@@ -1,10 +1,11 @@
 package request
 
 import (
-	"fmt"
 	"io"
 	"log"
+	"os"
 	"os/exec"
+	"strings"
 	"time"
 
 	"net/http"
@@ -26,9 +27,12 @@ func (obj *fingerproxySession) Start() {
 	go func() {
 		err := obj.cmd.Run() // Run 会阻塞，直到命令执行完
 		if !obj.closed && err != nil {
-			fmt.Println("命令执行出错:")
-			log.Print("请确保安装了 fingerproxy :\n pip install --force-reinstall git+https://gitee.com/gospider007/fingerproxy.git")
-			log.Panic(err)
+			if strings.Contains(err.Error(), "executable file not found") {
+				log.Print("缺少依赖执行如下命令安装:  pip install --force-reinstall git+https://gitee.com/gospider007/fingerproxy.git")
+				os.Exit(1)
+			} else {
+				log.Panic(err)
+			}
 		}
 	}()
 	time.Sleep(time.Second * 2)
