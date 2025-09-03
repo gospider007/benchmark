@@ -7,19 +7,27 @@ import (
 	chttp "github.com/wangluozhe/chttp"
 )
 
-var chttpSession = &chttp.Client{
-	Transport: &chttp.Transport{
-		MaxIdleConns:        100,
-		MaxIdleConnsPerHost: 100,
-		MaxConnsPerHost:     100,
-		TLSClientConfig: &tls.Config{
-			InsecureSkipVerify: true,
-		},
-	},
+type chttpSession struct {
+	session *chttp.Client
 }
 
-func ChttpRequest(href string) ([]byte, error) {
-	resp, err := chttpSession.Get(href) // Treat the package name as a Request, send GET request.
+var ChttpSession = new(chttpSession)
+
+func (obj *chttpSession) Start() {
+	obj.session = &chttp.Client{
+		Transport: &chttp.Transport{
+			MaxIdleConns:        100,
+			MaxIdleConnsPerHost: 100,
+			MaxConnsPerHost:     100,
+			TLSClientConfig: &tls.Config{
+				InsecureSkipVerify: true,
+			},
+		},
+	}
+}
+func (obj *chttpSession) End() {}
+func (obj *chttpSession) Request(href string) ([]byte, error) {
+	resp, err := obj.session.Get(href) // Treat the package name as a Request, send GET request.
 	if err != nil {
 		return nil, err
 	}

@@ -6,11 +6,15 @@ import (
 	tls "github.com/Noooste/utls"
 )
 
-var azureSession *azuretls.Session
+type azureSession struct {
+	session *azuretls.Session
+}
 
-func init() {
-	azureSession = azuretls.NewSession()
-	azureSession.Transport = &http.Transport{
+var AzureSession = new(azureSession)
+
+func (obj *azureSession) Start() {
+	obj.session = azuretls.NewSession()
+	obj.session.Transport = &http.Transport{
 		MaxConnsPerHost:     10000000,
 		MaxIdleConns:        1000000,
 		MaxIdleConnsPerHost: 1000000,
@@ -19,10 +23,9 @@ func init() {
 		},
 	}
 }
-
-func AzureTest(href string) ([]byte, error) {
-	response, err := azureSession.Get(href)
-	// response.CloseBody()
+func (obj *azureSession) End() {}
+func (obj *azureSession) Request(href string) ([]byte, error) {
+	response, err := obj.session.Get(href)
 	if err != nil {
 		return nil, err
 	}

@@ -77,7 +77,16 @@ func test(ctx context.Context, f func(href string) ([]byte, error), href string,
 		log.Panic(href, len(con))
 	}
 }
-func TestMain(f func(href string) ([]byte, error), total int, href string, Http2 bool, threadNum ...int) time.Duration {
+
+type Session interface {
+	Start()
+	End()
+	Request(href string) ([]byte, error)
+}
+
+func TestMain(f Session, total int, href string, Http2 bool, threadNum ...int) time.Duration {
+	f.Start()
+	defer f.End()
 	if Http2 {
 		href = "https://" + href
 	} else {
@@ -85,7 +94,7 @@ func TestMain(f func(href string) ([]byte, error), total int, href string, Http2
 	}
 	// href = "https://" + href
 	if len(threadNum) > 0 && threadNum[0] > 1 {
-		return TestThreadMain(f, total, href, threadNum[0])
+		return TestThreadMain(f.Request, total, href, threadNum[0])
 	}
 	var sucess atomic.Int64
 	// PrintBar(ctx, total, &sucess)
@@ -95,7 +104,7 @@ func TestMain(f func(href string) ([]byte, error), total int, href string, Http2
 		// if i%10000 == 0 {
 		// 	log.Print(i, " start")
 		// }
-		test(nil, f, href, &sucess)
+		test(nil, f.Request, href, &sucess)
 		log.Print(i, " end")
 
 		// if i%10000 == 0 {

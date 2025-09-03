@@ -4,15 +4,18 @@ import (
 	"github.com/wangluozhe/requests"
 )
 
-var WangluozheRequestSession = requests.NewSession()
+type wangluozheRequestSession struct {
+	session *requests.Session
+}
 
-func WangluozheRequest(href string) ([]byte, error) {
-	// headers := new(http.Header)
-	// headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
-	// resp, err := WangluozheRequestSession.Get(href, &url.Request{
-	// 	Headers: headers,
-	// })
-	resp, err := WangluozheRequestSession.Get(href, nil)
+var WangluozheRequestSession = new(wangluozheRequestSession)
+
+func (obj *wangluozheRequestSession) Start() {
+	obj.session = requests.NewSession()
+}
+func (obj *wangluozheRequestSession) End() {}
+func (obj *wangluozheRequestSession) Request(href string) ([]byte, error) {
+	resp, err := obj.session.Get(href, nil)
 	if err != nil {
 		return nil, err
 	}

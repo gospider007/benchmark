@@ -10,7 +10,6 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 	"runtime"
-	"time"
 )
 
 func oneThreadTest(requestFuncs []requestFunc, routes []string, http2 bool, total int, threadNum int) {
@@ -45,17 +44,15 @@ func oneThreadTest(requestFuncs []requestFunc, routes []string, http2 bool, tota
 
 type requestFunc struct {
 	name string
-	f    func(href string) ([]byte, error)
+	f    tools.Session
 }
 
-// {"GospiderRequest2", request.GospiderRequest2},
-
 var requestFuncs = []requestFunc{
-	// {"GospiderRequest", request.GospiderRequest},
-	// {"AzureTest", request.AzureTest},
-	{"WangluozheRequest", request.WangluozheRequest},
-	// {"ImrocReq", request.ImrocReq},
-	// {"GoRestyRequest", request.GoRestyRequest},
+	{"GospiderRequest", request.GospiderSession},
+	{"AzureTest", request.AzureSession},
+	{"WangluozheRequest", request.WangluozheRequestSession},
+	{"ImrocReq", request.ImrocReqSession},
+	{"GoRestyRequest", request.GoRestySession},
 }
 var routes = []string{"1k", "10k", "100k"}
 
@@ -63,12 +60,13 @@ func main() {
 	// go func() {
 	// 	log.Println(http.ListenAndServe("0.0.0.0:6060", nil))
 	// }()
-	oneThreadTest(requestFuncs, routes, true, 1000, 10)
+	// oneThreadTest(requestFuncs, routes, true, 10000, 100)
+	oneThreadTest(requestFuncs, routes, false, 10000, 100)
 	// oneThreadTest(requestFuncs, routes, false, 100000, 100)
 
 	var m runtime.MemStats
 	runtime.ReadMemStats(&m)
-	time.Sleep(time.Second * 10)
+	// time.Sleep(time.Second * 10)
 	fmt.Printf("程序结束时内存占用:\n")
 	fmt.Printf("Alloc = %.2f MB\n", float64(m.Alloc)/1024/1024)           // 当前堆上分配的内存
 	fmt.Printf("TotalAlloc = %.2f MB\n", float64(m.TotalAlloc)/1024/1024) // 程序运行过程中总分配的内存
