@@ -48,11 +48,12 @@ type requestFunc struct {
 }
 
 var requestFuncs = []requestFunc{
-	{"GospiderRequest", request.GospiderSession},
+	{"Fingerproxy", request.FingerproxySession},
 	{"AzureTest", request.AzureSession},
 	{"WangluozheRequest", request.WangluozheRequestSession},
 	{"ImrocReq", request.ImrocReqSession},
-	{"GoRestyRequest", request.GoRestySession},
+	{"GoResty", request.GoRestySession},
+	{"Http", request.HttpSession},
 }
 var routes = []string{"1k", "10k", "100k"}
 
@@ -61,7 +62,7 @@ func main() {
 	// 	log.Println(http.ListenAndServe("0.0.0.0:6060", nil))
 	// }()
 	// oneThreadTest(requestFuncs, routes, true, 10000, 100)
-	oneThreadTest(requestFuncs, routes, false, 10000, 100)
+	oneThreadTest(requestFuncs, routes, false, 100000, 100)
 	// oneThreadTest(requestFuncs, routes, false, 100000, 100)
 
 	var m runtime.MemStats

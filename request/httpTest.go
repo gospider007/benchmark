@@ -18,9 +18,9 @@ func (obj *httpSession) Start() {
 	obj.session = &http.Client{
 		Transport: &http.Transport{
 			ForceAttemptHTTP2:   true,
-			MaxIdleConns:        100,
-			MaxIdleConnsPerHost: 100,
-			MaxConnsPerHost:     100,
+			MaxIdleConns:        100000,
+			MaxIdleConnsPerHost: 100000,
+			MaxConnsPerHost:     100000,
 			TLSClientConfig: &tls.Config{
 				InsecureSkipVerify: true,
 			},

@@ -13,15 +13,15 @@ import (
 	"crypto/tls"
 )
 
-type gospiderSession struct {
+type fingerproxySession struct {
 	session *http.Client
 	cmd     *exec.Cmd
 	closed  bool
 }
 
-var GospiderSession = new(gospiderSession)
+var FingerproxySession = new(fingerproxySession)
 
-func (obj *gospiderSession) Start() {
+func (obj *fingerproxySession) Start() {
 	obj.cmd = exec.Command("fingerproxy") // 你想执行的命令
 	go func() {
 		err := obj.cmd.Run() // Run 会阻塞，直到命令执行完
@@ -47,11 +47,11 @@ func (obj *gospiderSession) Start() {
 		},
 	}
 }
-func (obj *gospiderSession) End() {
+func (obj *fingerproxySession) End() {
 	obj.closed = true
 	obj.cmd.Process.Kill() // 结束命令
 }
-func (obj *gospiderSession) Request(href string) ([]byte, error) {
+func (obj *fingerproxySession) Request(href string) ([]byte, error) {
 	resp, err := obj.session.Get(href) // Treat the package name as a Request, send GET request.
 	if err != nil {
 		return nil, err
