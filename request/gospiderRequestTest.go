@@ -51,6 +51,7 @@ func (obj *fingerproxySession) Start() {
 		},
 	}
 }
+
 func (obj *fingerproxySession) End() {
 	obj.closed = true
 	obj.cmd.Process.Kill() // 结束命令

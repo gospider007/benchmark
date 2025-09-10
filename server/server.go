@@ -154,7 +154,9 @@ func RequestServer2(ctx context.Context, addr string) *http.Server {
 	Server := &http.Server{
 		Addr: addr,
 		TLSConfig: &tls.Config{
-			GetCertificate:     gtls.GetCertificate,
+			GetCertificate: func(chi *tls.ClientHelloInfo) (*tls.Certificate, error) {
+				return gtls.GetCertificate(chi, nil, nil)
+			},
 			NextProtos:         []string{"h2"},
 			InsecureSkipVerify: true,
 		},
