@@ -3,7 +3,7 @@ module benchmark
 go 1.25.0
 
 require (
-	github.com/Noooste/azuretls-client v1.12.3
+	github.com/Noooste/azuretls-client v1.12.4
 	github.com/Noooste/fhttp v1.0.15
 	github.com/Noooste/utls v1.3.19
 	github.com/go-resty/resty/v2 v2.16.5
@@ -21,7 +21,7 @@ require (
 require (
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
 	github.com/Noooste/go-socks4 v0.0.2 // indirect
-	github.com/Noooste/uquic-go v1.0.0 // indirect
+	github.com/Noooste/uquic-go v1.0.1 // indirect
 	github.com/Noooste/websocket v1.0.3 // indirect
 	github.com/andybalholm/brotli v1.2.0 // indirect
 	github.com/bdandy/go-errors v1.2.2 // indirect
@@ -71,5 +71,5 @@ require (
 	golang.org/x/sync v0.17.0 // indirect
 	golang.org/x/sys v0.36.0 // indirect
 	golang.org/x/text v0.29.0 // indirect
-	golang.org/x/tools v0.36.0 // indirect
+	golang.org/x/tools v0.37.0 // indirect
 )
