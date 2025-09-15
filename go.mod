@@ -14,7 +14,7 @@ require (
 	github.com/refraction-networking/utls v1.8.0
 	github.com/wangluozhe/chttp v1.0.14
 	github.com/wangluozhe/fhttp v0.0.2
-	github.com/wangluozhe/requests v1.4.2
+	github.com/wangluozhe/requests v1.4.3
 	golang.org/x/net v0.44.0
 )
 
@@ -65,7 +65,7 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	golang.org/x/crypto v0.42.0 // indirect
-	golang.org/x/exp v0.0.0-20250819193227-8b4c13bb791b // indirect
+	golang.org/x/exp v0.0.0-20250911091902-df9299821621 // indirect
 	golang.org/x/image v0.31.0 // indirect
 	golang.org/x/mod v0.28.0 // indirect
 	golang.org/x/sync v0.17.0 // indirect
