@@ -8,7 +8,7 @@ require (
 	github.com/Noooste/utls v1.3.20
 	github.com/go-resty/resty/v2 v2.16.5
 	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
-	github.com/gospider007/gtls v0.0.0-20250923093128-da16404c2526
+	github.com/gospider007/gtls v0.0.0-20250929093316-a1397152be0a
 	github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23
 	github.com/imroc/req/v3 v3.55.0
 	github.com/refraction-networking/utls v1.8.0
