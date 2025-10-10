@@ -8,7 +8,7 @@ require (
 	github.com/Noooste/utls v1.3.20
 	github.com/go-resty/resty/v2 v2.16.5
 	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
-	github.com/gospider007/gtls v0.0.0-20250929093316-a1397152be0a
+	github.com/gospider007/gtls v0.0.0-20251010080835-5de0a5aebc43
 	github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23
 	github.com/imroc/req/v3 v3.55.0
 	github.com/refraction-networking/utls v1.8.0
@@ -57,7 +57,6 @@ require (
 	github.com/quic-go/qpack v0.5.1 // indirect
 	github.com/quic-go/quic-go v0.55.0 // indirect
 	github.com/refraction-networking/uquic v0.0.6 // indirect
-	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
@@ -72,7 +71,5 @@ require (
 	golang.org/x/sync v0.17.0 // indirect
 	golang.org/x/sys v0.37.0 // indirect
 	golang.org/x/text v0.30.0 // indirect
-	golang.org/x/time v0.13.0 // indirect
 	golang.org/x/tools v0.38.0 // indirect
-	google.golang.org/protobuf v1.36.9 // indirect
 )
