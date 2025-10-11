@@ -8,7 +8,7 @@ require (
 	github.com/Noooste/utls v1.3.20
 	github.com/go-resty/resty/v2 v2.16.5
 	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
-	github.com/gospider007/gtls v0.0.0-20251010080853-12699b045240
+	github.com/gospider007/gtls v0.0.0-20251011074705-bb9809acdaf1
 	github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23
 	github.com/imroc/req/v3 v3.55.0
 	github.com/refraction-networking/utls v1.8.0
@@ -57,8 +57,6 @@ require (
 	github.com/quic-go/qpack v0.5.1 // indirect
 	github.com/quic-go/quic-go v0.55.0 // indirect
 	github.com/refraction-networking/uquic v0.0.6 // indirect
-	github.com/rogpeppe/go-internal v1.14.1 // indirect
-	github.com/tidwall/match v1.2.0 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
