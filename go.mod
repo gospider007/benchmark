@@ -11,7 +11,7 @@ require (
 	github.com/gospider007/gtls v0.0.0-20251011074705-bb9809acdaf1
 	github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23
 	github.com/imroc/req/v3 v3.55.0
-	github.com/refraction-networking/utls v1.8.0
+	github.com/refraction-networking/utls v1.8.1
 	github.com/wangluozhe/chttp v1.0.14
 	github.com/wangluozhe/fhttp v0.0.2
 	github.com/wangluozhe/requests v1.4.3
