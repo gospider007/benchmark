@@ -40,7 +40,9 @@ require (
 	github.com/google/pprof v0.0.0-20251007162407-5df77e3f7d1d // indirect
 	github.com/gospider007/blog v0.0.0-20250815030743-f2af6b9013ab // indirect
 	github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb // indirect
-	github.com/gospider007/ja3 v0.0.0-20250908031106-827812269efe // indirect
+	github.com/gospider007/http1 v0.0.0-20251011074703-a8d2e5a53aa0 // indirect
+	github.com/gospider007/http2 v0.0.0-20251011074750-9f56e348ffb9 // indirect
+	github.com/gospider007/ja3 v0.0.0-20251015142731-b71ee7d288fb // indirect
 	github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c // indirect
 	github.com/gospider007/re v0.0.0-20250815031101-a57caeff73bf // indirect
 	github.com/gospider007/tools v0.0.0-20251010080832-0e5c6b21df2d // indirect
