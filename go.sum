@@ -48,8 +48,8 @@ github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb h1:YpDQxFwNwruiR
 github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb/go.mod h1:wuRRZSZZeGEY01xnzfCgUWtAsa0V/4v7ibb24qRgnFs=
 github.com/gospider007/conf v0.0.0-20250815031235-1df45ae2e117 h1:kXqDENYAMtnfXlebLuLrGjL3u1d8xAtU9pMeomN2UL4=
 github.com/gospider007/conf v0.0.0-20250815031235-1df45ae2e117/go.mod h1:gJfoQVhrLQEHmuNF2qGecqui8D/zmTYsh9CBsTxFCz8=
-github.com/gospider007/gtls v0.0.0-20251127145858-6c2d3f715980 h1:+YAO2ki/j/Rcep/Bq70OQjLuf/gZcKc65v7xDxdkJ1I=
-github.com/gospider007/gtls v0.0.0-20251127145858-6c2d3f715980/go.mod h1:hcIzpuyCHytetXHiKs0t3k/eXxXTekeosvo/d4Fhqf0=
+github.com/gospider007/gtls v0.0.0-20251128142913-3436ea356af4 h1:LqcSMxCLUlcx6GxuI2wBEtL8l5MWelwuE6a4Up23ZPE=
+github.com/gospider007/gtls v0.0.0-20251128142913-3436ea356af4/go.mod h1:64Xwjq4IE4ONt9Fjl3AF07BkPM0SLj6wJi9dv0RstRk=
 github.com/gospider007/ja3 v0.0.0-20251128080135-d90f41cdab1c h1:8hY1rbW3/U5r6dxqfdrhePwo9UuMuo2HSTyiIe8x2sU=
 github.com/gospider007/ja3 v0.0.0-20251128080135-d90f41cdab1c/go.mod h1:VS4tgvAaK1M2G8Tcx1iiXr91u15SNmZmDoiyYXgf8qw=
 github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c h1:WnFZf0v+Du5nH/R3pq5QwkTcfVxLqVMRp2dPaI6w6YY=
@@ -58,8 +58,8 @@ github.com/gospider007/re v0.0.0-20250815031101-a57caeff73bf h1:+3g9qmg+XLbYcY4v
 github.com/gospider007/re v0.0.0-20250815031101-a57caeff73bf/go.mod h1:5fVj9OYkqlOgBdz+kH4jgdiSZ6jdfbmexLIFqtMa9v8=
 github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23 h1:vhbfaMOisCqK4GkRs+Vv7GzKKPmmJ6DfrpUzTDGzCRs=
 github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23/go.mod h1:Z6lIuNYjtyylwIsIQ97JkKjiOHzWqfLbPpLH3Oh3XQU=
-github.com/gospider007/tools v0.0.0-20251125071203-f60847ba60e8 h1:VjoJ+o1CB0j6UM1VZmcJVsYDNGWAL2L2EVNb0Q9/2LU=
-github.com/gospider007/tools v0.0.0-20251125071203-f60847ba60e8/go.mod h1:4ZdyrP3OHWW7+hQWBma1v3BtD3VgyEhClSBoIXzp7fw=
+github.com/gospider007/tools v0.0.0-20251128142908-5c87784b1dd2 h1:rmu29k+s+8IiO2SMcz97+QgcVnlOBZuZT3tMwAELAwA=
+github.com/gospider007/tools v0.0.0-20251128142908-5c87784b1dd2/go.mod h1:4ZdyrP3OHWW7+hQWBma1v3BtD3VgyEhClSBoIXzp7fw=
 github.com/joshdk/go-junit v1.0.0 h1:S86cUKIdwBHWwA6xCmFlf3RTLfVXYQfvanM5Uh+K6GE=
 github.com/joshdk/go-junit v1.0.0/go.mod h1:TiiV0PqkaNfFXjEiyjWM3XXrhVyCa1K4Zfga6W52ung=
 github.com/klauspost/compress v1.18.1 h1:bcSGx7UbpBqMChDtsF28Lw6v/G94LPrrbMbdC3JH2co=
