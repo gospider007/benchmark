@@ -49,9 +49,9 @@ type requestFunc struct {
 
 var requestFuncs = []requestFunc{
 	{"Fingerproxy", request.FingerproxySession},
-	{"AzureTest", request.AzureSession},
+	// {"AzureTest", request.AzureSession},
 	{"WangluozheRequest", request.WangluozheRequestSession},
-	{"ImrocReq", request.ImrocReqSession},
+	// {"ImrocReq", request.ImrocReqSession},
 	{"GoResty", request.GoRestySession},
 	{"Http", request.HttpSession},
 }
