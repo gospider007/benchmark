@@ -5,13 +5,13 @@ go 1.25.0
 require (
 	github.com/go-resty/resty/v2 v2.17.0
 	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
-	github.com/gospider007/gtls v0.0.0-20251203140857-9d314c8ebb79
+	github.com/gospider007/gtls v0.0.0-20251208154015-cc28bb11ed75
 	github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23
 	github.com/refraction-networking/utls v1.8.1
 	github.com/wangluozhe/chttp v1.0.19
 	github.com/wangluozhe/fhttp v0.0.2
 	github.com/wangluozhe/requests v1.4.8
-	golang.org/x/net v0.47.0
+	golang.org/x/net v0.48.0
 )
 
 require (
@@ -42,7 +42,7 @@ require (
 	github.com/miekg/dns v1.1.68 // indirect
 	github.com/mileusna/useragent v1.3.5 // indirect
 	github.com/minio/minlz v1.0.1 // indirect
-	github.com/onsi/ginkgo/v2 v2.27.2 // indirect
+	github.com/onsi/ginkgo/v2 v2.27.3 // indirect
 	github.com/refraction-networking/uquic v0.0.6 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
@@ -50,12 +50,12 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
-	golang.org/x/crypto v0.45.0 // indirect
+	golang.org/x/crypto v0.46.0 // indirect
 	golang.org/x/exp v0.0.0-20251125195548-87e1e737ad39 // indirect
-	golang.org/x/image v0.33.0 // indirect
-	golang.org/x/mod v0.30.0 // indirect
-	golang.org/x/sync v0.18.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
-	golang.org/x/text v0.31.0 // indirect
-	golang.org/x/tools v0.39.0 // indirect
+	golang.org/x/image v0.34.0 // indirect
+	golang.org/x/mod v0.31.0 // indirect
+	golang.org/x/sync v0.19.0 // indirect
+	golang.org/x/sys v0.39.0 // indirect
+	golang.org/x/text v0.32.0 // indirect
+	golang.org/x/tools v0.40.0 // indirect
 )
