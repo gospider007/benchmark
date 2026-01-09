@@ -6,7 +6,7 @@ require (
 	github.com/go-resty/resty/v2 v2.17.1
 	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
 	github.com/gospider007/gtls v0.0.0-20260108062405-3286ba96f909
-	github.com/gospider007/thread v0.0.0-20250818134503-cc00ca28bc23
+	github.com/gospider007/thread v0.0.0-20260108062958-a2299a4cfb1f
 	github.com/refraction-networking/utls v1.8.1
 	github.com/wangluozhe/chttp v1.0.19
 	github.com/wangluozhe/fhttp v0.0.2
@@ -42,7 +42,7 @@ require (
 	github.com/miekg/dns v1.1.69 // indirect
 	github.com/mileusna/useragent v1.3.5 // indirect
 	github.com/minio/minlz v1.0.1 // indirect
-	github.com/onsi/ginkgo/v2 v2.27.3 // indirect
+	github.com/onsi/ginkgo/v2 v2.27.4 // indirect
 	github.com/refraction-networking/uquic v0.0.6 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
@@ -55,7 +55,7 @@ require (
 	golang.org/x/image v0.34.0 // indirect
 	golang.org/x/mod v0.31.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
-	golang.org/x/sys v0.39.0 // indirect
+	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.32.0 // indirect
 	golang.org/x/tools v0.40.0 // indirect
 )
