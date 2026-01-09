@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/go-resty/resty/v2 v2.17.1
 	github.com/gospider007/bar v0.0.0-20250815030902-4f5b5d6312cf
-	github.com/gospider007/gtls v0.0.0-20260109055238-b86b5e48a3d5
+	github.com/gospider007/gtls v0.0.0-20260109065825-a3e2260bb33a
 	github.com/gospider007/thread v0.0.0-20260108062958-a2299a4cfb1f
 	github.com/refraction-networking/utls v1.8.1
 	github.com/wangluozhe/chttp v1.0.19
@@ -31,7 +31,7 @@ require (
 	github.com/gospider007/blog v0.0.0-20250815030743-f2af6b9013ab // indirect
 	github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb // indirect
 	github.com/gospider007/conf v0.0.0-20250815031235-1df45ae2e117 // indirect
-	github.com/gospider007/ja3 v0.0.0-20260109061724-787588c0d398 // indirect
+	github.com/gospider007/ja3 v0.0.0-20260109065816-54854eb8d939 // indirect
 	github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c // indirect
 	github.com/gospider007/re v0.0.0-20251212071142-f56bce921150 // indirect
 	github.com/gospider007/tools v0.0.0-20260108062122-babc2c2f0542 // indirect
