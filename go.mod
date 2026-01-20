@@ -31,10 +31,10 @@ require (
 	github.com/gospider007/blog v0.0.0-20250815030743-f2af6b9013ab // indirect
 	github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb // indirect
 	github.com/gospider007/conf v0.0.0-20250815031235-1df45ae2e117 // indirect
-	github.com/gospider007/ja3 v0.0.0-20260113083832-03dac76b0775 // indirect
+	github.com/gospider007/ja3 v0.0.0-20260120074451-72b89866679e // indirect
 	github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c // indirect
 	github.com/gospider007/re v0.0.0-20251212071142-f56bce921150 // indirect
-	github.com/gospider007/tools v0.0.0-20260113083648-187b0026d83c // indirect
+	github.com/gospider007/tools v0.0.0-20260120074453-dbd9d4748c8a // indirect
 	github.com/klauspost/compress v1.18.3 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
