@@ -26,7 +26,7 @@ require (
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/golang/snappy v1.0.0 // indirect
 	github.com/google/gopacket v1.1.19 // indirect
-	github.com/google/pprof v0.0.0-20260115054156-294ebfa9ad83 // indirect
+	github.com/google/pprof v0.0.0-20260202012954-cb029daf43ef // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gospider007/blog v0.0.0-20250815030743-f2af6b9013ab // indirect
 	github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb // indirect
@@ -42,7 +42,7 @@ require (
 	github.com/miekg/dns v1.1.72 // indirect
 	github.com/mileusna/useragent v1.3.5 // indirect
 	github.com/minio/minlz v1.0.1 // indirect
-	github.com/onsi/ginkgo/v2 v2.27.5 // indirect
+	github.com/onsi/ginkgo/v2 v2.28.1 // indirect
 	github.com/refraction-networking/uquic v0.0.6 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
