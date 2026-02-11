@@ -6,7 +6,7 @@ require (
 	github.com/go-resty/resty/v2 v2.17.1
 	github.com/gospider007/bar v0.0.0-20260211061016-83e11c93b20c
 	github.com/gospider007/gtls v0.0.0-20260211061234-abb8219a0f2c
-	github.com/gospider007/thread v0.0.0-20260108062958-a2299a4cfb1f
+	github.com/gospider007/thread v0.0.0-20260211061331-cc185d7d0415
 	github.com/refraction-networking/utls v1.8.2
 	github.com/wangluozhe/chttp v1.0.20
 	github.com/wangluozhe/fhttp v0.0.2
