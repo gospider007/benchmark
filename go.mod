@@ -1,6 +1,6 @@
 module benchmark
 
-go 1.25.0
+go 1.26.0
 
 require (
 	github.com/go-resty/resty/v2 v2.17.1
@@ -29,7 +29,7 @@ require (
 	github.com/google/pprof v0.0.0-20260202012954-cb029daf43ef // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gospider007/blog v0.0.0-20250815030743-f2af6b9013ab // indirect
-	github.com/gospider007/chanx v0.0.0-20250815031005-1e20b624bbcb // indirect
+	github.com/gospider007/chanx v0.0.0-20260211054348-1dfd65a36494 // indirect
 	github.com/gospider007/conf v0.0.0-20250815031235-1df45ae2e117 // indirect
 	github.com/gospider007/ja3 v0.0.0-20260211034938-50423646bc2b // indirect
 	github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c // indirect
