@@ -28,11 +28,11 @@ require (
 	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/pprof v0.0.0-20260202012954-cb029daf43ef // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/gospider007/blog v0.0.0-20250815030743-f2af6b9013ab // indirect
+	github.com/gospider007/blog v0.0.0-20260211060835-ce5fbca77b83 // indirect
 	github.com/gospider007/chanx v0.0.0-20260211054348-1dfd65a36494 // indirect
 	github.com/gospider007/conf v0.0.0-20250815031235-1df45ae2e117 // indirect
 	github.com/gospider007/ja3 v0.0.0-20260211055048-daf26d479ca7 // indirect
-	github.com/gospider007/kinds v0.0.0-20250815031133-b2282666f69c // indirect
+	github.com/gospider007/kinds v0.0.0-20260211060834-06a10e2431d8 // indirect
 	github.com/gospider007/re v0.0.0-20251212071142-f56bce921150 // indirect
 	github.com/gospider007/tools v0.0.0-20260211054355-2d23f4156896 // indirect
 	github.com/klauspost/compress v1.18.4 // indirect
