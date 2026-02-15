@@ -3,7 +3,7 @@ module benchmark
 go 1.26.0
 
 require (
-	github.com/go-resty/resty/v2 v2.17.1
+	github.com/go-resty/resty/v2 v2.17.2
 	github.com/gospider007/bar v0.0.0-20260211061016-83e11c93b20c
 	github.com/gospider007/gtls v0.0.0-20260213010036-45d78ef0e7c7
 	github.com/gospider007/thread v0.0.0-20260211061331-cc185d7d0415
