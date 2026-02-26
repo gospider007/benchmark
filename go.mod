@@ -11,7 +11,7 @@ require (
 	github.com/wangluozhe/chttp v1.0.20
 	github.com/wangluozhe/fhttp v0.0.2
 	github.com/wangluozhe/requests v1.5.0
-	golang.org/x/net v0.50.0
+	golang.org/x/net v0.51.0
 )
 
 require (
