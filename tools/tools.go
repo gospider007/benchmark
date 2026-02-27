@@ -13,12 +13,16 @@ import (
 
 func PrintBar(ctx context.Context, total int, sucess *atomic.Int64) {
 	go func() {
+		interval := time.Second * 3
+		timer := time.NewTimer(interval)
+		defer timer.Stop()
 		barClient := bar.NewClient(int64(total))
 		for {
+			timer.Reset(interval)
 			select {
 			case <-ctx.Done():
 				return
-			case <-time.After(time.Second * 3):
+			case <-timer.C:
 				barClient.Print(sucess.Load())
 			}
 		}
