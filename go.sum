@@ -50,10 +50,10 @@ github.com/gospider007/blog v0.0.0-20260211060835-ce5fbca77b83 h1:UuQSlgP3zYnSmg
 github.com/gospider007/blog v0.0.0-20260211060835-ce5fbca77b83/go.mod h1:n4Ht01FpVgQtaOpToh2EDosiBzbCeO58R/KCFAEEwuc=
 github.com/gospider007/chanx v0.0.0-20260211054348-1dfd65a36494 h1:jE+Yn9OL6AWRlfkjVmEJ8GYRc4+Gq8n+8Xw5E2wWTQI=
 github.com/gospider007/chanx v0.0.0-20260211054348-1dfd65a36494/go.mod h1:hU/B8bHiw/vVyZdreQd/I6MDzKl+ppK8DkDasO4hZoM=
-github.com/gospider007/conf v0.0.0-20260324001555-71c57eba91c1 h1:7kPaPv4urvcMC6BW3hgUdywD4un27ChQyAppwAmQvh0=
-github.com/gospider007/conf v0.0.0-20260324001555-71c57eba91c1/go.mod h1:01Vr0KoZy98RWSchT5y2WxkIS75lGD3hoIzu2+M6Dis=
-github.com/gospider007/gtls v0.0.0-20260324001602-391c2e3ca436 h1:MPOEL5n9u8nA7SRovw9kjHxblAlIeBmi3EjjhtYoXw8=
-github.com/gospider007/gtls v0.0.0-20260324001602-391c2e3ca436/go.mod h1:2RrReer726pLIuxzZs7+wllbvv4FNdxaZHaPMZ174oo=
+github.com/gospider007/conf v0.0.0-20260324001715-fb3a69792799 h1:rpMeinfJTFAe4xdUoY0p9Tu6f1Td+SaKNQ4m1p1lF9U=
+github.com/gospider007/conf v0.0.0-20260324001715-fb3a69792799/go.mod h1:24Yvzx+GEDfAs77BG/WaLeY5nVPtm9L13OzeRpcVthI=
+github.com/gospider007/gtls v0.0.0-20260324001737-c570836ccd60 h1:XrjjYq6JzlzeGTBdkivkHTAMC/Luwn/iK0F4T1SwpVA=
+github.com/gospider007/gtls v0.0.0-20260324001737-c570836ccd60/go.mod h1:8yz0ZUDagQY5m1hfUKWUeWpmeTpuwhIDtN5aN8pt0Sc=
 github.com/gospider007/ja3 v0.0.0-20260324001717-a3e146a6fa57 h1:Bm2gHfJ5FiPsZ1tJT0UmwyZXUi3TCT4o+ySjkxHC7sw=
 github.com/gospider007/ja3 v0.0.0-20260324001717-a3e146a6fa57/go.mod h1:Ty3eFn2ywZAdpv/fBmoqn6KH6XZIZerLVD4CzsaVf8M=
 github.com/gospider007/kinds v0.0.0-20260211060834-06a10e2431d8 h1:EivYaFLOylV33Q5aRkF/cwkisOkDVDWLJ5CXfHYz5mU=
