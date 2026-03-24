@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	github.com/go-resty/resty/v2 v2.17.2
 	github.com/gospider007/bar v0.0.0-20260211061016-83e11c93b20c
-	github.com/gospider007/gtls v0.0.0-20260323170526-3a06f70a8378
+	github.com/gospider007/gtls v0.0.0-20260324001602-391c2e3ca436
 	github.com/gospider007/thread v0.0.0-20260227072212-5a85c55f9cb3
 	github.com/refraction-networking/utls v1.8.2
 	github.com/wangluozhe/chttp v1.0.20
@@ -30,11 +30,11 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gospider007/blog v0.0.0-20260211060835-ce5fbca77b83 // indirect
 	github.com/gospider007/chanx v0.0.0-20260211054348-1dfd65a36494 // indirect
-	github.com/gospider007/conf v0.0.0-20260323170523-429be8f078eb // indirect
-	github.com/gospider007/ja3 v0.0.0-20260323170525-ffe6efd39773 // indirect
+	github.com/gospider007/conf v0.0.0-20260324001555-71c57eba91c1 // indirect
+	github.com/gospider007/ja3 v0.0.0-20260324001717-a3e146a6fa57 // indirect
 	github.com/gospider007/kinds v0.0.0-20260211060834-06a10e2431d8 // indirect
 	github.com/gospider007/re v0.0.0-20260227072205-6223d82a3dab // indirect
-	github.com/gospider007/tools v0.0.0-20260323151002-ebe96ce78e71 // indirect
+	github.com/gospider007/tools v0.0.0-20260324001556-1c93ad227dc2 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/klauspost/compress v1.18.5 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
