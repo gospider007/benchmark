@@ -31,7 +31,7 @@ require (
 	github.com/gospider007/blog v0.0.0-20260211060835-ce5fbca77b83 // indirect
 	github.com/gospider007/chanx v0.0.0-20260211054348-1dfd65a36494 // indirect
 	github.com/gospider007/conf v0.0.0-20260413012735-bb0241823799 // indirect
-	github.com/gospider007/ja3 v0.0.0-20260413012738-7c775cba5599 // indirect
+	github.com/gospider007/ja3 v0.0.0-20260421093159-ea7781a95904 // indirect
 	github.com/gospider007/kinds v0.0.0-20260211060834-06a10e2431d8 // indirect
 	github.com/gospider007/re v0.0.0-20260227072205-6223d82a3dab // indirect
 	github.com/gospider007/tools v0.0.0-20260413012604-fb962abed9fb // indirect
