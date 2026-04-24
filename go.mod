@@ -10,7 +10,7 @@ require (
 	github.com/refraction-networking/utls v1.8.2
 	github.com/wangluozhe/chttp v1.1.1
 	github.com/wangluozhe/fhttp v0.0.2
-	github.com/wangluozhe/requests v1.5.1
+	github.com/wangluozhe/requests v1.5.2
 	golang.org/x/net v0.53.0
 )
 

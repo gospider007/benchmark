@@ -120,8 +120,8 @@ github.com/wangluozhe/chttp v1.1.1 h1:8Qk0I3VfBdfx6ZZUN9eRprNsHdC6r6Fwv8eoAScpSs
 github.com/wangluozhe/chttp v1.1.1/go.mod h1:qL17hBJI3mew9vF2r5FEkA7HHh1bbFSER4Oia6NmDRk=
 github.com/wangluozhe/fhttp v0.0.2 h1:udhERKJY0LxH2+4gz1WRSWtHjvD99kXtp8yL7vl3VjQ=
 github.com/wangluozhe/fhttp v0.0.2/go.mod h1:kAK+x1U0Wmy/htOSEeV31JyFBAVndp/orqVJZTq9FxM=
-github.com/wangluozhe/requests v1.5.1 h1:r6mFYikPSBTQy1tJjukRj5I1Hto7yUGhTcNG25JjBxA=
-github.com/wangluozhe/requests v1.5.1/go.mod h1:0BtP3PBMFCpImdkXIk++CQIqdGSBkFvB0ou39Droas4=
+github.com/wangluozhe/requests v1.5.2 h1:OLV3vyC2Omx/XGvxy2c25EpETDCqi9Y39lKVu6d2dcg=
+github.com/wangluozhe/requests v1.5.2/go.mod h1:1ThjvFHZBp2bV9k7hHmjK7iziLntx4PSsT1qh+E0l5U=
 github.com/x448/float16 v0.8.4 h1:qLwI1I70+NjRFUR3zs1JPUCgaCXSh3SW62uAKT1mSBM=
 github.com/x448/float16 v0.8.4/go.mod h1:14CWIYCyZA/cWjXOioeEpHeN/83MdbZDRQHoFcYsOfg=
 github.com/xyproto/randomstring v1.0.5 h1:YtlWPoRdgMu3NZtP45drfy1GKoojuR7hmRcnhZqKjWU=
