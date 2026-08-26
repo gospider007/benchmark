@@ -34,7 +34,7 @@ require (
 	github.com/gospider007/ja3 v0.0.0-20260826002956-b2c5187bde33 // indirect
 	github.com/gospider007/kinds v0.0.0-20260824054539-a612e386b5ac // indirect
 	github.com/gospider007/re v0.0.0-20260824054539-32823144d328 // indirect
-	github.com/gospider007/tools v0.0.0-20260824054625-953e094a3970 // indirect
+	github.com/gospider007/tools v0.0.0-20260826022531-159b55a750ab // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/klauspost/compress v1.19.2 // indirect
 	github.com/klauspost/cpuid/v2 v2.4.0 // indirect
