@@ -26,7 +26,7 @@ require (
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/golang/snappy v1.0.0 // indirect
 	github.com/google/gopacket v1.1.19 // indirect
-	github.com/google/pprof v0.0.0-20260802141513-ef3492d7dac3 // indirect
+	github.com/google/pprof v0.0.0-20260825171938-4d453200e7d9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gospider007/blog v0.0.0-20260824054542-c49de6365542 // indirect
 	github.com/gospider007/chanx v0.0.0-20260824054539-b54f23393586 // indirect
@@ -52,7 +52,7 @@ require (
 	go.uber.org/zap v1.28.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	golang.org/x/crypto v0.55.0 // indirect
-	golang.org/x/exp v0.0.0-20260820142414-ca536658362e // indirect
+	golang.org/x/exp v0.0.0-20260824195058-e88cd73687aa // indirect
 	golang.org/x/image v0.45.0 // indirect
 	golang.org/x/mod v0.40.0 // indirect
 	golang.org/x/sync v0.22.0 // indirect
