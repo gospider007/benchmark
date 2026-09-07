@@ -28,7 +28,7 @@ require (
 	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/pprof v0.0.0-20260906184651-6331bc6350fe // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/gospider007/blog v0.0.0-20260824054542-c49de6365542 // indirect
+	github.com/gospider007/blog v0.0.0-20260907015415-59e2a9022fa5 // indirect
 	github.com/gospider007/chanx v0.0.0-20260824054539-b54f23393586 // indirect
 	github.com/gospider007/conf v0.0.0-20260907003645-dd51e0c1d0a8 // indirect
 	github.com/gospider007/ja3 v0.0.0-20260907003657-cba3471fe268 // indirect
