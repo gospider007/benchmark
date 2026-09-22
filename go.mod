@@ -31,10 +31,10 @@ require (
 	github.com/gospider007/blog v0.0.0-20260907015415-59e2a9022fa5 // indirect
 	github.com/gospider007/chanx v0.0.0-20260824054539-b54f23393586 // indirect
 	github.com/gospider007/conf v0.0.0-20260911054809-ba863ba0882e // indirect
-	github.com/gospider007/ja3 v0.0.0-20260920005106-17eb8f6e3e53 // indirect
+	github.com/gospider007/ja3 v0.0.0-20260922022700-302937f329d3 // indirect
 	github.com/gospider007/kinds v0.0.0-20260824054539-a612e386b5ac // indirect
 	github.com/gospider007/re v0.0.0-20260824054539-32823144d328 // indirect
-	github.com/gospider007/tools v0.0.0-20260911054714-b4af053b217c // indirect
+	github.com/gospider007/tools v0.0.0-20260922022651-0a9e58d5bc65 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/klauspost/compress v1.20.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.4.0 // indirect
