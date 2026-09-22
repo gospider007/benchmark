@@ -5,7 +5,7 @@ go 1.27.0
 require (
 	github.com/go-resty/resty/v2 v2.17.2
 	github.com/gospider007/bar v0.0.0-20260907015442-6d4252a2a33d
-	github.com/gospider007/gtls v0.0.0-20260922022812-eb9c9e960d09
+	github.com/gospider007/gtls v0.0.0-20260922022900-37560707587c
 	github.com/gospider007/thread v0.0.0-20260824054620-3919072a5afb
 	github.com/refraction-networking/utls v1.8.2
 	github.com/wangluozhe/chttp v1.1.1
